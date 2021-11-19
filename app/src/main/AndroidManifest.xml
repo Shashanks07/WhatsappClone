@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.baratomessenger">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".App">
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".ChatuserActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="https://parseapi.back4app.com" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="qU8sbWijxuA6YynwKJWwShT08vdbKN712llcBVpn" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="50qRt379HM9G8N9oTR3I5mQJ9yu2Iqh8dBvFVqnR" />
+    </application>
+
+</manifest>
